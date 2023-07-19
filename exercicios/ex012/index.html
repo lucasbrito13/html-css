@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <h2>Formatos de videos</h2>
+    <p>
+        Os mais utilizados e mais suportados nos navegadores são: <br>
+        <ul>
+            <li>MP4/M4V</li>
+            <li>OGV</li>
+            <li>WEBM</li>
+
+        </ul>
+    </p>
+    <h2>Inserir os videos</h2>
+    <p>
+        Para inserir os videos, localmente, não é muito diferente dos audios. <br>
+        Utiliza-se a tag &lt;VIDEO&gt; junto de alguns parametos: <i>POSTER</i>; <i>CONTROLS</i>. 
+    </p>
+    <p>
+        <strong>Segue exemplo</strong>: <br>
+
+        <pre>
+    &lt;<strong><i>video</i></strong> width="700" <strong><i>poster</i></strong>="imagens/lcx.jpg" <strong><i>controls</i></strong> &gt;
+    &lt;source src="midia/Meuvideo.webm" type="video/webm"&gt;
+    &lt;source src="midia/meuvideo.mp4" type="video/mp4"&gt;
+    &lt;source src="midia/meuvideo.ogv" type="video/ogg"&gt;
+    &lt;p&gt;Seu navegador não tem compatibilidade com reprodução de videos.&lt;/p&gt;
+    &lt;/<strong><i>video</i></strong>&gt;
+        </pre>
+    </p>
+    <p>
+        <pre>
+<code>
+    Onde:
+    <strong>VIDEO</strong> tag aberta para condicionar que será selecionado um arquivo de video.
+    <strong>POSTER</strong> Indica uma thumbnail(CAPA) para o video.
+    <strong>CONTROLS</strong> indica os controles do videos, como: PLAY; VOLUME; VELOCIDADE DE REPRODUÇÃO;
+</code>
+        </pre>
+    </p>
+    <p>Este video está hospedado no meu proprio servidor</p>
+    <video width="560" poster="imagens/lcx.jpg" controls >
+        <source src="midia/Meuvideo.webm" type="video/webm">
+        <source src="midia/meuvideo.mp4" type="video/mp4">
+        <source src="midia/meuvideo.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de videos.</p>
+    </video>
+
+    <h1>Inserindo videos externos</h1>
+    <h2>Videos do Youtube</h2>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/voTrQTtVjgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5n2K8-ZuY7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

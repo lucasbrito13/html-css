@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h2>Usando links externos</h2>
+    <p>Para  usar um link em um techo é simples, basta usar a tag &lt;A&gt; <br>
+    Porém, se link for externo ao seu dominio é recomendavél utilizar os paramentos <i>Target="_blank"</i> e <i>rel="external"</i></p>
+    <p>Onde: <br>
+    <i>target="_blank"</i> indica o link a executar em outra "aba"
+<br>
+    <i>rel="external"</i> dá significado de link externo ao do propio site</p>
+    <p><strong>Exemplo:</strong></p>
+    <p>Link externo:
+        <br>
+    Você pode acessar o meu <a href="https://www.instagram.com/lcxinformatica/" target="_blank" rel="external">perfil no instagram</a></p>
+    <p>Link no proprio site:
+        <br>
+    Você pode acessar meu <a href="https://youtube.com/@lucaseduardo5504">canal no youtube</a>
+    </p>
+    <h2>Usando link Internos</h2>
+    <p>Link interno vai fazer a relação com outra pagina do proprio servidor</p>
+    <p> <strong>Exemplo:</strong>
+        <br>
+    Essa aqui é a minha primeira pagina, se você quiser acesar a minha segunda pagina <a href="pag002.html" rel="next">clique aqui!</a></p>
+
+    <h2>Paginas em outras pastas</h2>
+    <p>Existe a opção de acessar outra pagina em outra pasta no proprio servidor</p>
+    <p><strong>Exemplo:</strong> <br>
+    Veja também minha <a href="terceira/pag003.html">terceira pagina</a>, que fala sobre drogas
+    </p>
+    <h2>Links para dowloads</h2>
+    <p>Dependendo do navegador e do arquivo, ao invés de ele baixar imediatamente o arquivo, ele apenas abre, tipo arquivos PDF</p>
+    <p>Não tem muita diferença para adicionar um link para dowload, o que vai diferenciar de um link normal vai ser os parametros colocados: DOWLOAD e TYPE. </p>
+    <p>Onde: <br>
+    <i>DOWLOAD="certificadoMysql.pdf" </i> indica que o link seguido é para dowload
+    <br>
+    <i>TYPE="application/pdf"</i> indica o tipo de arquivo que será gerado para dowload</p>
+    <p><strong>Exemplo:</strong></p>
+    <ul>
+        <li><a href="livro/certificadoMysql.pdf" download="certificadoMysql.pdf" type="application/pdf">Baixar livro em PDF</a></li>
+        <li><a href="livro/algoritmos.zip" download="algoritimos.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>O objetivo destas imagens, é que o proprio site se arrume para tela em que esteja sendo aberto</p>
+    <p>Para isso, é utilizada a tag &lt;PICTURE&gt;. Dentro desta tag é utilizada a tag de por imagens(&lt;IMG&gt;) <br>
+    Dentro da tag &lt;PICTURE&gt; adicione a tag &lt;SOURCE:MEDIA:TYPE&gt;, acima da imagem principal, que geralmente é maior formatação. <strong>Segue exeplo:</strong></p>
+    <p>&lt;source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"&gt;</p>
+    <p>
+        Onde: <br>
+        <strong>MEDIA</strong> indica que se o navegador tiver menos pixels, ele deve exibir a imagem do parameto a seguir. <br>
+        <strong>SRCSET</strong> Indica qual imagem ele tem que procurar caso o navegador tiver menos pixels que o declarado acima. <br>
+        <strong>type</strong> Indica o tipo de imagem(PNG; JPEG).
+
+    </p>
+    <picture>
+        
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivél">
+    </picture>
+    <h1>Reproduzindo audios</h1>
+    <p>Testando reproduzir audios em HTML5</p>
+    <p>Para adiconar um audio no site, basta utilizar a tag &lt;AUDIO&gt;, dentro dela faça a busca do documento. <strong>Segue exemplo:</strong></p>
+    <p>&lt;audio src="midia/Lucrixx.mp3" controls autoplay&gt; &lt;/audio&gt;</p>
+    <p>
+        Onde: <br>
+        <Strong>SRC</Strong> Faz a busca de onde o audio está, recomendavél está em uma pasta diferente do index. <br>
+        <strong>CONTROLS</strong> Faz aparecer os controles do audio, como PLAY; VOLUME; VELOCIDADE DE REPRODUÇÂO; <br>
+        <strong>AUTOPLAY</strong> Faz o audio iniciar junto com o site, em alguns navegadores esse parameto não funciona.
+    </p>
+    <audio src="midia/Lucrixx.mp3" controls autoplay></audio>
+    <p>Muitos navegadores não tem compatibilidade com todos os formatos <br>
+    Para isso é utilizada outra tag dentro de &lt;AUDIO&gt;. <strong>Segue exemplo:</strong></p>
+    <p>
+<pre>
+&lt;audio controls&gt;
+    &lt;source src="midia/Lucrixx.mp3" type="audio/mpeg"&gt;
+    &lt;source src="midia/Lucrixx.mp3" type="audio/ogg"&gt;
+    &lt;source src="midia/Lucrixx.mp3" type="audio/wav"&gt;
+    &lt;p&gt;Infelizmente seu navegador não consegue reproduzir audio. &lt;a href="midia/Lucrixx.mp3"&gt; Clique aqui para baixar o arquivo MP3 &lt;/a&gt;&lt;/p&gt;
+&lt;/audio&gt;
+<p>
+    Onde: <br>
+    <Strong>SRC</Strong> Faz a busca de onde o audio está. <br>
+    <strong>TYPE</strong> Diz qual o tipo do documento
+</p>
+<p>A diferença é que caso o navegador não abra em mp3, ele tenta a outra opção. No caso somente 3 opções. <br>
+Se nenhuma das opções abrir ele deve mostrar o texto e o link para dowload do arquivo.</p>
+</pre>
+    </p>
+    <audio controls>
+        <source src="midia/Lucrixx.mp3" type="audio/mpeg" >
+        <source src="midia/Lucrixx.mp3" type="audio/ogg">
+        <source src="midia/Lucrixx.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="midia/Lucrixx.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <p>
+        Existem os parametos: <br>
+        <strong>PRELOAD</strong>: AUTO; METADATA; NONE;(AUTO: Só vai considerar que o site carregou completamente quando o audio carregar completamente; METADATA: Carrega só o nome do arquivo, data, duração; NONE: Não carrega nada) <br>
+        <Strong>AUTOPLAY</Strong>: Reproduz o audio junto com a inicialização do site <br>
+        <Strong>LOOP</Strong>: o nome diz
+    </p>
+    <h1>Formatos de videos</h1>
+    <p>Os mais utilizados e mais suportados nos navegadores são: <br>
+    <ul>
+        <li>MP4/M4V</li>
+        <li>OGV</li>
+        <li>WEBM</li>
+
+    </ul>
+    </p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        header{
+            height: 100%;
+        }
+        
+        body{
+            background-image: linear-gradient(-45deg, #3198E2, #6D59C0, #B93590, #E33F5F, #FDD579);
+            background-attachment: fixed;
+        }
+        h1{
+            background-color: rgba(255, 255, 255, 0.733);
+            color: rgb(0, 0, 0);
+        }
+        p{
+            background-color:rgba(255, 255, 255, 0.733) ;
+            color: rgb(0, 0, 0);
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Como criar um degradê em CSS</h1>
+
+    <p>Dentro do &lt;HEAD&gt; é criada a TAG &lt;STYLE&gt;.</p>
+    <p>Dentro da tag &lt;STYLE&gt; coloca-se o body e adiciona o parametro"background-image: linear-gradient (to left/right/top/bottom white, black)"</p>
+    <p>
+        Onde: <br>
+        <strong>background-image</strong> é a propriedade <br>
+        <strong>linear-gradient</strong> é função interna <br>
+        <strong>"To" left/right/top/bottom</strong> é o lado por onde começa e termina as cores escolhidas.
+        <br>
+        <strong>OBS:</strong> é possivél trocar o angulo do gradiente. Utilizando "45deg"(45 seria o numero de graus. 'DEG' é abreviação para degraus) ao invés de "to left"
+    </p>
+    <p>
+        <strong>Exemplo:</strong><br>
+        body{
+            background-image: linear-gradient(to left, rgb(236, 209, 53), rgb(207, 43, 212));
+        }
+    </p>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Trabalhando com fontes</h1>
+        <h2>Aplicando as fontes</h2>
+        <p>Para utilizar as fontes é facil, coloca-se dentro do arquivo CSS na sintaxe BODY a propriedade font-family. <strong>Exemplo no codigo:</strong></p>
+        <div>
+            <p>
+            <pre>
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+            </pre>
+            </p>
+        </div>
+        <p>O problema maior vem que em alguns navegadores, ou displays como televisões, não possuem todas as fontes intaladas. Para resolver isso é utilizada uma combinação de fontes, Chamada <strong>"Safe Fonts"</strong></p>
+        <p>Essa combinação faz com que, caso o navegador não encontre a primeira fonte, ele selecione a segunda da fila, assim sucessivamente.</p>
+
+        <h2>Tamanho das fontes</h2>
+        <p>
+            Existem dois tipo de medidas de fontes:
+            <ol>
+                <li>Medidas Absolutas</li>
+                <li>Medidas Relativas</li>
+            </ol>
+            <h3>1. Medidas Absolutas</h3>
+            <ul>
+                <li>cm (Centimetros)</li>
+                <li>mm (milimetros)</li>
+                <li>in (polegadas)</li>
+                <li>px (pixels)</li>
+                <li>pt (ponto)</li>
+                <li>pc (paica)</li>
+            </ul>
+            <h3>Medidas Relativas</h3>
+            <ul>
+                <li>em (Tamanho da letra M, maiuscula, da fonte atual)</li>
+                <li>ex (altura X)</li>
+                <li>rem (root do body)</li>
+                <li>vw (largura da viewport)</li>
+                <li>vh (altura da viewport)</li>
+                <li>porcentagem</li>
+            </ul>
+        </p>    
+        <p>A W3 ORG, recomenda utilizar somente <strong>PIXEL</strong> e <strong>EM</strong> como tamanho das fontes em sites.</p>
+            <p><strong>Exemplo no codigo:</strong></p>
+        <div>
+            <p>
+            <pre>
+    body{
+        font-size: 1em;
+    }
+            </pre>
+            </p>
+        </div>
+
+
+        <h2>Peso da fonte</h2>
+        <p>Para começar, o peso da fonte tem que ser testado de acordo com a fonte selecionada. Pois nem todas as fontes tem certas variações</p>
+        <p>
+            Para utilizar usa-se a propriedade <strong>"font-weight"</strong>
+        </p>
+        <p>
+            Existem dois tipos de pesos:
+            <ol>
+                <li>Leterários</li>
+                <li>Numéricos</li>
+            </ol>
+            <h3>1. Literários</h3>
+            <ul>
+                <li>Lighter</li>
+                <li>normal</li>
+                <li>bold</li>
+                <li>bolder</li>
+            </ul>
+            <h3>2. Numéricos</h3>
+            <p>Começa em 100 e termina em 900. A aplicaçõa é de 100 em 100. <br>
+            Exemplo: <br>
+            font-weight: 100; <br>
+            font-weight: 300; <br>
+            font-weight: 800; <br>
+            </p>
+        </p>
+        <p><Strong>Exemplo no codigo:</Strong></p>
+        <div>
+            <p>
+            <pre>
+    body{
+        font-weight: normal;
+    }
+            </pre>
+            </p>
+        </div>
+    
+        <h2>Uso do estilo da fonte</h2>
+        <p>O font-style é basicamente para indicar se a fonte a ser usada será "Normal" ou <i>"Itálico"</i>. Porém nem todas as fontes tem itálico</p>
+        <p><strong>Exemplo no código:</strong></p>
+        <div>
+            <p>
+            <pre>
+    body{
+        font-style: italic; 
+    }
+            </pre>
+            </p>
+        </div>
+        <h2>Sublinhado</h2>
+        Para o uso do <u>sublinhado</u> em CSS, utiliza-se a propriedade <strong>"Text-Decoration"</strong>. Existem dois valores mais utilizados, o <strong><u>underline</u></strong> e <strong><s>line-through</s>.</strong>
+        <p><strong>Exemplo no código:</strong></p>
+        <div>
+            <p>
+            <pre>
+    body{
+        text-decoration: underline; 
+    }
+            </pre>
+            </p>
+        </div>
+<br>
+
+    <h1>Propriedades ShortHand</h1>
+    <p>Propriedades abreviadas (tradução literal: Propriedades abreviadas) são propriedades de CSS que permitem que você defina os valores de outras propriedades de CSS simultaneamente. Usando propriedade taquigráfica, um desenvolvedor web pode escrever folhas de estilo mais concisas e legíveis, economizando tempo e energia. </p>
+    <p>
+        Exemplo: <br>
+        Uma formatação normal de código CSS seria assim: <br>
+        <div>
+            <p>
+            <pre>
+    body{
+        font-family: Sans-serif;
+        font-weight: normal;
+        font-size: 3em;
+        font-style: italic; 
+    }
+            </pre>
+            </p>
+        </div>
+    </p>
+    <p>
+        Agora feito como um <strong>Shorthand Font</strong>, ficaria assim: <br>
+        <div>
+            <p>
+            <pre>
+    body{
+        font: italic normal 3em Sans-serif
+    }
+            </pre>
+            </p>
+        </div>
+    </p>
+    <p>O ShortHand faz uma junção de todas as propriedades em uma só. Porém existe um padrão a ser seguido: Style; Weight; Size; Family.</p>
+    </main>
+    
+</body>
+</html>

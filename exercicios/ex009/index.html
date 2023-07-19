@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>A ordem faz diferença</p>
+    <p>Utiliza-se a tag &lt;OL&gt;</p>
+    <p> Pode-se utilizar um paramentro TYPE, que muda o tipo da lista, como: Número; letra; <br> Exemplo: 1. A. a. I. i.</p>
+
+    <p>Pode também escolher por qual número/letra começar, pelo parametro START
+    </p>
+    <p><Strong>Exemplo  de uso dos parametros:</Strong>
+<pre>
+    &lt;OL type="I" start="3"&gt;
+        &lt;LI&gt; III. ir para academia
+    &lt;/ol&gt;
+</pre>
+    <p>A tag &lt;LI&gt; não precisa ser fechada, porém o VisualCode fecha ela pelo atalho</p>
+    <p><strong>Segue exemplo de lista:</strong></p>
+    <ol type="I" start="3">
+        <li>ir para academia
+        <li>estudar
+        <li>ir para o estagio
+        <li>estudar quando voltar
+        <li>Procurar casas a venda
+        <li>Estudar sobre o negocio de escolas infantis
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <p>A ordem não faz diferença</p>
+    <p>Utiliza-se a tag &lt;UL&gt;</p>
+    <p> Pode-se utilizar um paramentro TYPE, que muda o tipo de "ponto"<br>
+    Tem 3 tipos de TYPE no UL, estes são: SQUARE; DISC; CIRCLE</p>
+    <p><strong>Exemplo  de uso do parametro:</strong>
+<pre>
+    &lt;OL type="circle"&gt;
+        &lt;LI&gt; • Pão
+    &lt;/ol&gt;
+</pre>
+    <p><strong>Segue exemplo de lista:</strong></p>
+    <ul type=" disc">
+        <li>Pão</li>
+        <li>alface</li>
+        <li>tomate</li>
+        <li>ovo</li>
+        <li>cebola</li>
+    </ul>
+    <h2>Juntando listas versão 1.0</h2>
+    <p>Dá pra juntar as listas, literalmente fazer uma dentro da outra. </p>
+    <p><strong>Segue exemplo:</strong></p>
+
+    <h3>Desenhos favoritos</h3>
+    <ul>
+        <li>Antigos</li>
+        <ol type="a">
+            <li>Scooby-Doo</li>
+            <li>Simpsons</li>
+            <li>SouthPark</li>
+            <li>Jhonny Bravo</li>
+
+        </ol>
+        <li>Atuais</li>
+        <ol type="a" start="5">
+            <li>Apenas um show</li>
+            <li>hora de aventura</li>
+            <li> sei lá, ficou uma merda os desenhos</li>
+        </ol>
+        
+    </ul>
+    <h2>Lista definições</h2>
+    <p>A lista de definição é como  um dicionário, tem o termo e a descrição. Utiliza-se a tag &lt;DL&gt; para criar a lista. &lt;DT&gt; para criar o termo, e &lt;DD&gt; para criar a descrição.</p>
+    <p><strong>Exemplo:</strong> <br>
+<pre>
+    &lt;DL&gt;
+        &lt;DT&gt;HTML&lt;/DT&gt;
+        &lt;DD&gt;Linguagem de marcação para  criação do conteúdo de um site.&lt;/DD&gt;
+    &lt;/DL&gt;
+</pre>   
+    </p>
+    <p><strong>Segue lista exemplo:</strong></p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação do desing de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criação de interatividade de um site.</dd>
+    </dl>
+</body>
+</html>

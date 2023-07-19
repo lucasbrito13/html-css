@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <h1>Seletores personalizados</h1>
+        <h2>Utilizando IDs</h2>
+            <p>As ids são uma forma de identificar um elemento, e devem ser ÚNICAS para cada elemento. É como se fossem impressões digitais de nossos dedos ou RGs. Através delas, pode-se atribuir formatação a um elemento em especial.</p>
+            <p>No código fonte, escolha o elemento que você quer aplicar a personalização. E na CSS aplique o desing.</p>
+            <p><Strong>Exemplo no código:</Strong></p>
+        <div>
+            <pre>
+        <strong>No HTML:</strong> <br>
+        &lt;H1 ID="primeiro"&gt;Exemplo&lt;/H1&gt;
+            </pre>
+            <pre>
+        <strong>Na CSS:</strong> <br>
+        H1#primeiro{
+            Color: Red;
+        }
+            </pre>
+            <p>*Obs: Lembrando que as IDs são identificadas por #</p>
+        </div>
+
+        <h2>Utilizando Class</h2>
+
+            <p>As classes são uma forma de identificar um grupo de elementos. Através delas, pode-se atribuir formatação a VÁRIOS elementos de uma vez.</p>
+            <p>Diferente das IDs, as classes podem ser utilizadas mais de uma vez, e por varios seletors.</p>
+
+            <p><strong>Exemplo no codigo:</strong></p>
+        <div>
+            <pre>
+        <strong>No HTML:</strong> <br>
+        &lt;H1 class="basico"&gt;CSS Básico&lt;/H1&gt;
+            </pre>
+            <pre>
+        <strong>Na CSS:</strong> <br>
+        h2.basico{
+            color: red;
+        }
+            </pre>
+            <p>*Obs: Lembrando que as Class são identificadas por .</p>
+        </div>
+    <h1>Pseudo Classes</h1>
+        <p>
+            Uma pseudo-classe CSS seleciona um elemento HTML de acordo com o estado deste elemento. Este estado pode estar relacionado com algum evento que ocorra no elemento (como um input do usuário ou uma interação com o mouse), ou então com a relação de uma tag com suas tags filhas. 
+        </p>
+        <p>
+            As pseudo-classes iniciam com símbolo : (dois pontos) e geralmente são aplicadas a algum seletor CSS mais simples, como um seletor de classe ou um seletor de tag, permitindo formatações mais específicas de acordo com o estado do elemento.
+        </p>
+        <h2>Hover</h2>
+        <p>A pseudo-classe "Hover" é a que mais pode ser utilizada para essa explicação.</p>
+        <p>O Hover permite que um elemento tenha seu estilo alterado através da ação do usuário, quando o próprio passa o cursor do mouse sobre o elemento.</p>
+        <p><strong>Exemplo no código:</strong></p>
+        <div id="div-hov">
+            <pre>
+        div:hover{
+            background-color: blue;
+            color: white;
+        }
+            </pre>
+        </div>
+        <p>Nesse exemplo do códgio acima, faz com que quando o mouse passar por cima de uma div, fique azul e as cores fontes brancas.</p>
+        <p id="ex-div">Podemos fazer com textos também(Passe o mouse aqui)</p>
+        <p>Para fazer esse exemplo do texto acima, utilizei:</p>
+        <div id="div-hov">
+            <pre>
+        p#ex-div:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+            </pre>
+            <P>*Obs: Isso não transforma a div, ou textos em links.</P>
+        </div>
+
+</body>
+</html>

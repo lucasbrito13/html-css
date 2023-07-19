@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to left, rgb(67, 99, 129), rgb(109, 173, 109));
+            margin: 0px;
+        }
+
+        header{
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(115, 155, 75);
+            padding: 3px;
+            text-align: center;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+        }
+               
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            margin: 10px;
+            border-radius: 0px 10px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            border-radius: 0px 15px;
+        }
+        article > aside{
+            background-color: rgb(143, 143, 143);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        .ancora1{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        .ancora2{
+            text-decoration: none;
+            color: rgb(255, 251, 251);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        .ancora1:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        .ancora2:hover{
+            text-decoration: underline;
+            color: rgb(0, 0, 0);
+        }
+
+        .assun{
+            background-color: rgb(115, 155, 75);
+            padding: 5px;
+            margin: 5px;
+            width: auto;
+            height: auto;
+            display: inline-block;
+            border-radius: 0px 5px;
+        }
+
+        #assuntos{
+            text-align: justify;
+            
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <h1>Site teste</h1>
+        <nav>
+            <a href="#" class="ancora1">Link</a>
+            <a href="#" class="ancora1">Link</a>
+            <a href="#" class="ancora1">Link</a>
+            <a href="#" class="ancora1">Link</a>
+            <a href="#" class="ancora1">Link</a>
+        </nav>
+     </header>
+     <main>
+        <section id="assuntos">
+            <p>
+                <article class="assun"><a href="#" class="ancora2">Esportes</a></article>
+                <article class="assun"><a href="#" class="ancora2">Politica</a></article>
+                <article class="assun"><a href="#" class="ancora2">Tecnologia</a></article>
+            </p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia accusamus odit natus iusto laborum, quasi omnis temporibus eos sit aperiam ullam voluptate ducimus quas quia ratione voluptatibus corrupti cupiditate!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+     </main>
+     <footer>
+        <p>Desenvolvido por LCX</p>
+     </footer>
+</body>
+</html>
