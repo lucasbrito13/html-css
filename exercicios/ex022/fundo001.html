@@ -6,13 +6,27 @@
     <title>Teste de imagem de fundo</title>
 
     <style>
+        body{
+            background-image: linear-gradient(to right, rgba(72, 141, 184, 0.863), rgba(0, 0, 0, 0.836));
+            color: white;
+        }
         div.quadrado{
             display: inline-block;
             border: 1px solid black;
-            width: 150px;
+            width: 200px;
             height: 150px;
             background-color: lightgray;
             border-radius: 10px;
+        }
+
+        div > p {
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: auto;
+            background-color: black;
+            
+        
         }
 
         #q1{
@@ -24,23 +38,36 @@
         }
 
         #q3{
-            background-image: url('imagens/pattern001.png');
+            background-image: url('imagens/pattern003.png');
+        }
+
+        h1{
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.527), transparent);
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Colocando uma imagen de fundo no seu site</h1>
+    </header>
     
     <div class="quadrado" id="q1">
-
+        <P>COR</P>
     </div>
 
     <div class="quadrado" id="q2">
-
+        <P>GRADIENTE</P>
     </div>
 
     <div class="quadrado" id="q3">
-
+        <P>IMAGEM</P>
     </div>
 
+
+    <article>
+        <p>Todo elemento de caixa, pode receber um fundo. Como cor, gradiente ou imagem.</p>
+
+        <p> Os exemplos acima, são &lt;DIV&gt;. Cada uma delas está com um exemplo diferente.</p>
+    </article>
 </body>
 </html>
