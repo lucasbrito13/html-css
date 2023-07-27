@@ -10,31 +10,16 @@
         }
 
         table{
+            height: 400px;
             width: 400px;
             border-collapse: collapse;
-        }
-
-        tr{
-            background-color: red;
-
-        }
-        tr.destaque{
-            background-color: yellow;
-        }
-        tr.neutro{
-            background-color: yellowgreen;
-        }
-        tr.morto{
-            background-color: gray;
-        }
-
-        td.dado{
-            background-color: blueviolet;
         }
 
         td{
             border: 1px solid black;
             padding: 8px;
+            text-align: center;
+            vertical-align: middle;
         }
     </style>
        
@@ -42,13 +27,14 @@
 <body>
     <h1>Minha primeira tabela</h1>
     <table>
-         <tr class="morto">
-            <td class="dado">A1</td>
+         <tr> 
+            
+            <td>A1</td>
             <td>B1</td>
             <td>C1</td>
          </tr>
          
-         <tr class="destaque">
+         <tr>
             <td >A2</td>
             <td>B2</td>
             <td>C2</td>
@@ -60,28 +46,10 @@
             <td>C3</td>
          </tr>
 
-         <tr class="neutro">
+         <tr>
             <td>A4</td>
             <td>B4</td>
-            <td class="dado">C4</td>
-         </tr>
-
-         <tr >
-            <td>A5</td>
-            <td>B5</td>
-            <td>C5</td>
-         </tr>
-
-         <tr >
-            <td>A6</td>
-            <td class="dado">B6</td>
-            <td>C6</td>
-         </tr>
-
-         <tr class="morto">
-            <td>A7</td>
-            <td>B7</td>
-            <td>C7</td>
+            <td>C4</td>
          </tr>
     </table>
 </body>
