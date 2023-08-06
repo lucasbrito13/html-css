@@ -4,37 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>uso de iframe</title>
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        iframe#tela{
-            width: 100vh;
-            height: 400px;
-            border: 2px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
-    <h1>Faça uma escolha</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque consectetur, nemo, reprehenderit deleniti officiis minus delectus excepturi ipsa ea dicta, corrupti voluptate iure? Totam sed hic mollitia modi blanditiis!</p>
-
-    <ul>
-        <li><a href="paginas-extras/pag001.html" target="frame">COMBO DE BLACK - LUCRIXX</a></li>
-        <li><a href="paginas-extras/pag002.html" target="frame">Lucrixx - SeJogaNaBala Prod.Pumaboy</a></li>
-        <li><a href="paginas-extras/pag003.html" target="frame">Lucrixx - Drink Azul - Ft. PumaBoy</a></li>
-    </ul>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident libero nemo dignissimos odit explicabo magnam, necessitatibus ex nam! Error repellendus est ipsa velit, fugiat atque corporis ex voluptates magni quod!</p>
-
-    <iframe src="" id="tela" name="frame">
-        <p>Infelizmente o seu navegador não é compatível com isso, clique <a href="">aqui</a> para acessar!</p>
-    </iframe>
-
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque et numquam quaerat tempore consequatur qui a fugiat doloremque corrupti dolorem aperiam sequi accusamus in, hic quia reprehenderit, quos itaque placeat?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rem culpa dolores, aut velit iure placeat a atque sed adipisci consequatur esse aspernatur cumque eum et voluptate possimus quis excepturi!
-    </p>
-    
+    <main>
+        <article>
+            <h1>Este é um site teste!</h1>
+            <p>Estou estudando e criando conteudos explicativos, com a intenção de fazer demonstrações que fiquem com efeitos legais e interessantes para visitantes. Tudo isso utilizando iFrames. </p>
+            <div>
+                <h2>Clique em um dos links abaixos para visualizar um clip de musica.</h2>
+                <p>(O clip será exibido na caixa abaixo)</p>
+            </div>
+            <ul>
+                <li><a href="paginas-extras/pag001.html" target="frame">COMBO DE BLACK - LUCRIXX</a></li>
+                <li><a href="paginas-extras/pag002.html" target="frame">Lucrixx - SeJogaNaBala Prod.Pumaboy</a></li>
+                <li><a href="paginas-extras/pag003.html" target="frame">Lucrixx - Drink Azul - Ft. PumaBoy</a></li>
+            </ul>
+            <p>Esses videos estão hospedados pelo youtube, e sendo mantidos dentro de uma pagina local. Porém feito a exibição por meio de iFrame nesta mesma pagina, sem que saia da guia.</p>
+            <div class="video">
+                <iframe src="" id="tela" name="frame">
+                    <p>Infelizmente o seu navegador não é compatível com isso, clique <a href="">aqui</a> para acessar!</p>
+                </iframe>
+            </div>
+            <p>Alguns dizem que iframes não tem mais utilização, porém eu digo que não existe criatividade!</p>
+            
+        </article>
+    </main>
 </body>
+<footer>
+    <p>Site criado por <a href="https://www.instagram.com/lucrixx_/" target="_blank">LCX</a>.</p>
+</footer>
 </html>
