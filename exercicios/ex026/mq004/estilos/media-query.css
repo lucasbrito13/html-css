@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 /*Todas as demais midias*/
 
  /* Typical Device Breakpoints
@@ -11,14 +19,103 @@ Grandes telas: acima de 1200px
  */
 
  @media print { /*IMPRESSÃO*/
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        text-shadow: none;
+        color: black;
+    }
 
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#print { display: block;}
+    img#pc { display: none;}
+    img#tv { display: none;}
+ }
+
+ @media screen and (max-width: 768px) { /*SMARTPHONE*/
+    
+    html {
+        height: 100vh;
+    }
+
+    body {
+        background-image: url(../imagens/back-phone.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 768px;
+    }
+
+    main {
+        background-color: rgba(255, 255, 255, 0.842);
+        width: 90vw;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    h1 {
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.493);
+        
+    }
+
+    h1::before {
+        content: "Versão Smartphone";
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+
+    img#phone { display: block;}
+    img#tablet { display: none;}
+    img#print { display: none;}
+    img#pc { display: none;}
+    img#tv { display: none;}
  }
 
  @media screen and (min-width: 768px) and (max-width: 992px) {
+    html {
+        height: 100vh;
+    }
+
     body{
         background: url(../imagens/back-tablet.jpg);
+        background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+        max-width: 768px;
+    }
+
+    main {
+        background-color: rgba(255, 255, 255, 0.842);
+        width: 90vw;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    h1 {
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.493);
+        
+    }
+
+    h1::before {
+        content: "Versão Tablet";
+    }
+
+    img {
+        display: block;
+        margin: auto;
     }
 
     img#phone { display: none;}
@@ -28,10 +125,94 @@ Grandes telas: acima de 1200px
     img#tv { display: none;}
  }
 
- @media screen and (min-width: 992px) and (max-width: 1200px) {
+ @media screen and (min-width: 992px) and (max-width: 1200px) { /*DESKTOP*/
+    html {
+        height: 100vh;
+    }
+
+    body{
+        background: url(../imagens/back-pc.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 768px;
+    }
+
+    main {
+        background-color: rgba(255, 255, 255, 0.842);
+        width: 90vw;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    h1 {
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.493);
+        
+    }
+
+    h1::before {
+        content: "Versão desktop";
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#print { display: none;}
+    img#pc { display: block;}
+    img#tv { display: none;}
     
  }
 
- @media screen and (min-width: 1200px) {
+ @media screen and (min-width: 1200px) { /*Telas Grandes*/
+    html {
+        height: 100vh;
+    }
+
+    body{
+        background: url(../imagens/back-tv.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 768px;
+    }
+
+    main {
+        background-color: rgba(255, 255, 255, 0.842);
+        width: 90vw;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    h1 {
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.493);
+        
+    }
+
+    h1::before {
+        content: "Versão para telas grandes";
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#print { display: none;}
+    img#pc { display: none;}
+    img#tv { display: block;}
     
  }
