@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Teste de Media Query</h1>
-        <nav>
+        <span id="menu" class="material-icons" onclick="clickMenu()">menu</span>
+        <nav id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -27,5 +30,18 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore fuga ab hic consequatur. Numquam maiores eveniet debitis laudantium eos, reprehenderit earum maxime magnam cupiditate quia dolorem natus, at ipsum eum.</p>
         </article>
     </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://www.instagram.com/lcxinformatica/" target="_blank">LCX</a></p>
+    </footer>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
